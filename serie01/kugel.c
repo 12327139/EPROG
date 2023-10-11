@@ -3,12 +3,11 @@
 int main() {
     double r = 0;
     double pi = 3.14;
-    double fourThirds = (4.0/3.0);
 
     printf("Radius r = ");
     scanf("%lf", &r);
 
-    double volume = fourThirds * pi * (r*r*r);
+    double volume = 4.0/3.0 * pi * (r*r*r);
     printf("Volumen = %lf\n", volume);
 
     double surface = 4 * pi * (r*r);

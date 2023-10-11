@@ -6,8 +6,8 @@ int main() {
     printf("n = ");
     scanf("%d", &n);
     
-    if (n == 0) {
-        printf("n darf nicht 0 sein\n");
+    if (n == -2) {
+        printf("n darf nicht -2 sein\n");
         return 1;
     }
 

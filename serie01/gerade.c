@@ -18,6 +18,7 @@ int main() {
     
     double x_0 = -q/m;
     printf("x_0 = %lf\n", x_0);
+    printf("Koordinaten: x=%lf, y=0\n", x_0);
 
     return 0;
 }

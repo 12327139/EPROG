@@ -15,7 +15,7 @@ int main(){
     printf("x = ");
     scanf("%lf", &x);
 
-    double p_x = a*x*x + b*x + c; 
+    double p_x = (a*x*x)+(b*x)+c; 
     printf("p(%lf)=%lf\n", x, p_x);
 
     return 0;
