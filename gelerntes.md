@@ -1,0 +1,6 @@
+- printf(), scanf()
+- Variablen
+- Arithmetische Operatoren
+- Implizites/Explizites Type Casting
+- Logische Operatoren 
+- if-else
