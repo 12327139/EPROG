@@ -10,7 +10,7 @@ int main() {
     double volume = 4.0/3.0 * pi * (r*r*r);
     printf("Volumen = %lf\n", volume);
 
-    double surface = 4 * pi * (r*r);
+    double surface = 4.0 * pi * (r*r);
     printf("Oberflaeche = %lf\n", surface);
 
     return 0;

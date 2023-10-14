@@ -20,8 +20,8 @@ int main() {
         return 1;
     }
 
-    double zaehler = a_1*b_1 + a_2*b_2;
-    double nenner = b_1*b_1 + b_2*b_2;
+    double zaehler = a_1 * b_1 + a_2 * b_2;
+    double nenner = b_1 * b_1 + b_2 * b_2;
 
     if (nenner == 0) {
         printf("Division durch null!");
@@ -29,9 +29,13 @@ int main() {
     }
 
     double bruch = zaehler / nenner;
+    
+    // (a_1 * b_1 + a_2 * b_2) / (b_1 * b_1 + b_2 * b_2) * b_1
     double orthoA = bruch * b_1;
+    
+    // (a_1 * b_1 + a_2 * b_2) / (b_1 * b_1 + b_2 * b_2) * b_2
     double orthoB = bruch * b_2;
-
+    
     printf("Orthogonalprojektion von a = %lf\n", orthoA);
     printf("Orthogonalprojektion von b = %lf\n", orthoB);
 
