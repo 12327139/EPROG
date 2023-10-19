@@ -45,12 +45,18 @@ int main() {
         }
     }
 
+    int isUnmoeglich = hypotenuse > schenkel_1 + schenkel_2; 
+    if (isUnmoeglich) {
+        printf("Das Dreieck ist 'unmoeglich'\n");
+        return 0;
+    }
+
     int isGleichseitig = schenkel_1 == schenkel_2 && schenkel_2 == hypotenuse;
     if (isGleichseitig) {
         printf("Das Dreieck ist gleichseitig\n");
     }
 
-    int isGleichschenklig = schenkel_1 == schenkel_2 && schenkel_2 == hypotenuse; 
+    int isGleichschenklig = schenkel_1 == schenkel_2; 
     if (isGleichschenklig) {
         printf("Das Dreieck ist gleichschenklig\n");
     }
@@ -69,11 +75,6 @@ int main() {
     int isEntartet = hypotenuse == schenkel_1 + schenkel_2; 
     if (isEntartet) {
         printf("Das Dreieck ist 'entartet'\n");
-    }
-
-    int isUnmoeglich = hypotenuse > schenkel_1 + schenkel_2; 
-    if (isUnmoeglich) {
-        printf("Das Dreieck ist 'unmoeglich'\n");
     }
 
     return 0;

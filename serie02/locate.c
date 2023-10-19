@@ -4,21 +4,25 @@ int main() {
     double L, x, y = 0;
 
     printf("Laenge L = ");
-    scanf("%lf", &L);
-
-    if (L <= 0) {
+    if (!scanf("%lf", &L) || L <= 0) {
         printf("L muss > 0 sein\n");
         return 1;
     }
 
     printf("x = ");
-    scanf("%lf", &x);
+    if (!scanf("%lf", &x)) {
+        printf("Ungültige Eingabe\n");
+        return 1;
+    }
 
     printf("y = ");
-    scanf("%lf", &y);
+    if (!scanf("%lf", &y)) {
+        printf("Ungültige Eingabe\n");
+        return 1;
+    }
 
     int imQuadrat = (x > 0 && x < L) && (y > 0 && y < L);
-    int ausserhalb = (x < 0 || x > L) && (y < 0 || y > L);
+    int ausserhalb = (x < 0 || x > L) || (y < 0 || y > L);
 
     if (imQuadrat) {
         printf("Der Punkt ist im Quadrat\n");
@@ -36,4 +40,3 @@ int main() {
                   || (y == 0 && ((0 <= x) && (x <= L)))
                   || (y == L && ((0 <= x) && (x <= L)));
 */
-    
