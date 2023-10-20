@@ -15,3 +15,17 @@
 - Lifetime und Scope
 - Globale und lokale Variablen
 - Blöcke/Scope
+
+# Funktionen
+- Funktionen
+- Call by Value
+
+# Kommentare
+- einzeiliger Kommentar
+- mehrzeiliger Kommentar
+
+# Rekursionen
+- Rekursive Funktionen
+- Bisektionsverfahren
+
+# Mathematische Funktionen?
