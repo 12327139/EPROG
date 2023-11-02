@@ -1,7 +1,13 @@
 #include<stdio.h>
 
+// aus Aufgabe 3
+int sgn(double x) {
+    return 1 - (2 * (x < 0)); // 1-0 oder 1-2 -> 1 oder -1
+}
+
+// aus Aufgabe 3
 double dabs(double x) {
-    return (1 - (2 * (x < 0))) * x;
+    return sgn(x) * x;
 }
 
 double minabs(double x, double y) {

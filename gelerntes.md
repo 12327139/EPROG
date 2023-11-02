@@ -28,4 +28,27 @@
 - Rekursive Funktionen
 - Bisektionsverfahren
 
-# Mathematische Funktionen?
+# Mathematische Funktionen
+- math.h
+- gcc ... -lm
+- abs in stdlib.h
+
+# Schleifen
+- while
+- ++, --
+- do-while
+- break
+
+# Einfache Fehlerkontrolle
+- gcc -c: nur Objekt-Code (Libraries ausgeschlossen)
+- gcc -c -Wall: Alle Warnungen
+- assert.h (assert(condition))
+
+# Testen von Code
+- Testen
+- Toter Code
+- in UE Tests erklären
+
+# Daten speichern in Arrays
+- Arrays
+- Arrays als Vektoren

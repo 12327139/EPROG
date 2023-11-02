@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int binomialkoeffizient(int n, int k) {
+int binomial(int n, int k) {
     if (k == 0 || (n == k)) return 1; 
-    return binomialkoeffizient(n-1, k) + binomialkoeffizient(n-1, k-1);
+    return binomial(n-1, k) + binomial(n-1, k-1);
 }
 
 int main() {
@@ -23,7 +23,7 @@ int main() {
         return 1;
     }
 
-    int ergebnis = binomialkoeffizient(n, k);
+    int ergebnis = binomial(n, k);
     printf("Ergebnis: %d\n", ergebnis);
 
     return 0;

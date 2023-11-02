@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+// aus Aufgabe 1
 int binomialkoeffizient(int n, int k) {
     if (k == 0 || (n == k)) return 1; 
     return binomialkoeffizient(n-1, k) + binomialkoeffizient(n-1, k-1);
