@@ -8,11 +8,6 @@ int istAusN(int n) {
     return n >= 1;
 }
 
-// Hilfsfunktion um Doubles zu vergleichen.
-int double_greater_equals(double a, double b, double toleranz) {
-    return a > b || fabs(a-b) < toleranz;
-}
-
 // Fibonacci-Folge
 int a(int n) {
     int definitionsbereich = n >= 0 && n < 47; // Ab n=47 Integer-Overflow (unerwartete Ergebnisse)
@@ -41,7 +36,7 @@ int a(int n) {
 
 // Konvergiert gegen den goldenen Schnitt (1 + sqrt(5))/2
 double quotientenfolge(int n) {
-    assert(istAusN(n));
+    assert(n >= 0);
     return (double) a(n+1) / a(n);
 }
 
@@ -56,7 +51,7 @@ int cauchy(int k) {
     double inv_k = 1./k;
 
     int n = 1;
-    while (double_greater_equals(fabs(b(n)), inv_k, 0.0009)) {
+    while (fabs(b(n)) <= inv_k) {
         ++n;
     }
 
@@ -72,11 +67,5 @@ int main() {
     int indexN = cauchy(k);
     printf("Index n = %d\n", indexN);
 
-    test();
-
     return 0;
-}
-
-void test() {
-    printf("Index n = %d\n", cauchy(1));
 }

@@ -2,13 +2,19 @@
 #include<assert.h>
 
 void pythagoras(int n) {
+    assert(n >= 0);
     int x = 0;
-    int y = 1;
-    int z = 2;
+    int y = 0;
+    int z = 0;
+
     while (++z <= n) {
+        y = 0;
         while(++y < z) {
+            x = 0;
             while (++x < y) {
-                printf("%d, %d, %d\n", x, y, z);
+                if (x*x + y*y == z*z) {
+                    printf("%d, %d, %d\n", x, y, z);
+                }
             }            
         }
     }
