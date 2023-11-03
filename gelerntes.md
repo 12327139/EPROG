@@ -50,5 +50,12 @@
 - in UE Tests erklären
 
 # Daten speichern in Arrays
-- Arrays
+- Eindimensionale Arrays
+- Zweidimensionale Arrays
 - Arrays als Vektoren
+
+# Zählschleifen
+- for-Schleife
+- break
+- continue
+- #define
