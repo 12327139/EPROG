@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 
-
 #define DIM_N 3
 #define DIM_M 3
 

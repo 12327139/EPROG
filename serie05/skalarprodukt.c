@@ -7,8 +7,8 @@ double scalarProduct(double x[], double y[], int n) {
     assert(n > 0);
 
     double summe = 0;
-    for (int i = 0; i < n; i++) {
-        summe = summe + x[i] * y[i];
+    for (int j = 0; j < n; j++) {
+        summe = summe + x[j] * y[j];
     }
     return summe;
 }

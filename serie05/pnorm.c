@@ -38,5 +38,5 @@ int main() {
 }
 
 /*
-Beobachtung: Bei gleichbleibendem x und groesser werdendem p konvergiert pnorm nach n
+Beobachtung: Bei gleichbleibendem x und groesser werdendem p konvergiert pnorm -> max(x)
 */
