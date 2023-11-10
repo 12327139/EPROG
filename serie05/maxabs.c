@@ -1,18 +1,23 @@
 #include<stdio.h>
 #include<math.h>
+#include<assert.h>
 
 #define DIM_N 5
 
 double maxabs(double x[], int n) {
-    double maximum = 0;
+    assert(n > 0);
+    
+    double maximum = fabs(x[0]);
+    int index = 0;
     double abs_element = 0;
     for (int i = 0; i < n; i++) {
         abs_element = fabs(x[i]);
         if (abs_element > maximum) {
             maximum = abs_element;
+            index = i;
         }
     }
-    return maximum;
+    return x[index];
 }   
 
 int main() {
