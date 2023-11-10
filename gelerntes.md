@@ -59,3 +59,17 @@
 - break
 - continue
 - #define
+
+# Aufwand von Algorithmen
+- worst case!
+- Big-O-Notation
+- Binary search
+- Aufwand
+- Zeitmessung (time.h)
+- Laufzeit
+
+# Pointer
+- Pointer
+- Dereferenzieren
+- &var, *ptr
+- Call by Value/Reference
