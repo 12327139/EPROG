@@ -52,9 +52,9 @@ int main() {
         scanf("%lf", &a[i]);
     }
 
-    print_vector("Input: ", a, n);
+    print_vector("Input", a, n);
     q_sort(a, n);
-    print_vector("Sorted: ", a, n);
+    print_vector("Sorted", a, n);
 
     return 0;
 }

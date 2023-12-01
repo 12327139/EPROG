@@ -18,7 +18,7 @@ int num_digits_of_dec_to_base(int dec, int base) {
 }
 
 int* dec2bin(int N, int* n) {
-    assert(N >= 0 && N < 65535);
+    assert(N >= 0 && N <= 65535);
     *n = num_digits_of_dec_to_base(N, 2);
     int* bin_digits = malloc(*n * sizeof(int));
     int rest = 0;
