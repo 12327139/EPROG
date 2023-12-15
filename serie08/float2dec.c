@@ -5,9 +5,7 @@
 
 // e positiv
 int q_pow_2(int e) {
-    int produkt = 1;
-    for (int i = 0; i < e; i++) produkt *= 2;
-    return produkt;
+    return 2 << e-1;
 }
 
 // e positiv

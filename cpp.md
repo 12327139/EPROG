@@ -14,9 +14,6 @@
 - bool, true, false
 - Fkt default params (void f(int x, int y = 3);)
 - fkt overloading
-
---------------
-
 - Klassen und Objekte, Vererbung
 - Zugriffskontrolle (private, public, protected)
 - Methoden (z.b. void Triangle::getArea() {...}), können auch direkt implementiert werden
@@ -24,3 +21,10 @@
 - std::string Klasse, string != char*, Methoden
 - try, throw, catch
 - std::abort() 
+- this->attr 
+- constructor, destructor
+- method shorthand 
+- Class nesting
+- Templates
+- C++ Standardcontainer list, queue, stack, deque, set, multiset, map, multimap, vector
+- vector Template (#include<vector>)
