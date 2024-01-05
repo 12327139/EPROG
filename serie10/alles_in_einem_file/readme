@@ -1,0 +1,6 @@
+- Hab ein paar Hilfsfunktionen dazuprogrammiert damit das Programm ein bisschen lesbarer wird. 
+- Alle Hilfsmethoden die "to_string()" heißen und die Funtion "string double_to_string(double d)"
+  sind nur dazu da um Objekte mit "std::cout << o.to_string() << std::endl" in der Konsole auszugeben.
+  Da ich aber ein paar Sachen verwende die wir in der Vorlesung nicht gemacht haben und diese Funktionen
+  auch nicht in der Angabe stehen kann man sie auch löschen ohne das Programm kaputt zu machen.
+- Die Klassen Vector und Complex kommen mehr oder weniger direkt aus dem Skriptum

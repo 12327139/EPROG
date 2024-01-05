@@ -28,3 +28,12 @@
 - Templates
 - C++ Standardcontainer list, queue, stack, deque, set, multiset, map, multimap, vector
 - vector Template (#include<vector>)
+
+- Vector-Klasse
+- Matrix-Klasse
+- Referenzen &
+ - gleicher datentyp, def und init gleichzeitig
+ - ermoeglicht "echtes" call by reference
+ - ref als return type (nur bei methoden sinnvoll) 
+- foreach, iteratoren
+- const 
